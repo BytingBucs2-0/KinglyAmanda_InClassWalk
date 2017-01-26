@@ -242,4 +242,119 @@ To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
    f105575..579594d  master -> master
 
 LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   goodbye.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add goodbye.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git commit -m "
+> Add a secret link"
+[master fe40b7e] Add a secret link
+ 1 file changed, 1 insertion(+)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push
+Username for 'https://github.com': aking15@bucs.fsw.edu
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push origin master
+Username for 'https://github.com': aking15@bucs.fsw.edu
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git log
+commit fe40b7e72372b1d19eecfcb0f4a6567e23691190
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:39:17 2017 -0500
+
+    Add a secret link
+
+commit 579594daf776a3c69c4544555b11830455e73685
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:31:28 2017 -0500
+
+    Add some new text to the index and goodbye
+
+commit f105575d276514230a5790ba2d0cc7db7b59dbdc
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:27:39 2017 -0500
+
+    Add repository name to file
+
+commit ef417d30a0110ca93002f9cb6bc6724867ee2091
+Author: aking15 <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:06:31 2017 -0500
+
+    Initial commit
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push
+Username for 'https://github.com': aking15@bucs.fsw.edu
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+   579594d..beb6825  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ CommandsOfChapter2.txt | 245 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 245 insertions(+)
+ create mode 100644 CommandsOfChapter2.txt
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push
+Username for 'https://github.com': aking15@bucs.fsw.edu
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 662 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+   beb6825..709c56c  master -> master
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
 $
