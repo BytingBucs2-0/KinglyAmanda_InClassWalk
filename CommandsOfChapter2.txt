@@ -1,0 +1,245 @@
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git config --global user.name "Amanda King"
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git config --global user.email "aking15@bucs.fsw.edu"
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ mkdir Chapter2InClassWalkthrough
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ cd Chapter2InClassWalkthrough/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough
+$ git init
+Initialized empty Git repository in F:/Spring 2017/Git-Repository/Chapter2InClassWalkthrough/.git/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        about.html
+        goodbye.html
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git add index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git add about.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git add goodbye.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git commit -m "Add all three files"
+[master (root-commit) 77b6e3e] Add all three files
+ 3 files changed, 95 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 goodbye.html
+ create mode 100644 index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git commit -a -m "Add another comment to index"
+[master 9c2879b] Add another comment to index
+ 1 file changed, 1 insertion(+)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git commit -a -m "Add another line to about"
+[master fbd22f5] Add another line to about
+ 1 file changed, 1 insertion(+)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   goodbye.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ git commit -a -m "Delete line from goodbye
+> "
+[master 43b59a5] Delete line from goodbye
+ 1 file changed, 1 deletion(-)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter2InClassWalkthrough (master)
+$ cd ..
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git clone https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+Cloning into 'KinglyAmanda_InClassWalk'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ cd KinglyAmanda_InClassWalk/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        about.html
+        goodbye.html
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add about.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add goodbye.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git commit -m "Add repository name to file"
+[master f105575] Add repository name to file
+ 3 files changed, 97 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 goodbye.html
+ create mode 100644 index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   goodbye.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push origin master
+Username for 'https://github.com': aking15@bucs.fsw.edu
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 975 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+   ef417d3..f105575  master -> master
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git log
+commit f105575d276514230a5790ba2d0cc7db7b59dbdc
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:27:39 2017 -0500
+
+    Add repository name to file
+
+commit ef417d30a0110ca93002f9cb6bc6724867ee2091
+Author: aking15 <aking15@bucs.fsw.edu>
+Date:   Thu Jan 26 14:06:31 2017 -0500
+
+    Initial commit
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   goodbye.html
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add  goodbye.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git add index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git commit -m "Add some new text to the index and goodbye"
+[master 579594d] Add some new text to the index and goodbye
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$ git push origin master
+Username for 'https://github.com': aking15@bucs.fsw.edu
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 523 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BytingBucs2-0/KinglyAmanda_InClassWalk
+   f105575..579594d  master -> master
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/KinglyAmanda_InClassWalk (master)
+$
